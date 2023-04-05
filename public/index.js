@@ -15,25 +15,43 @@ const firebaseConfig = {
   appId: "1:998283466149:web:b11584035bc5ac6740844c",
   measurementId: "G-E9B9YHYBHE",
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
-console.log("Chay rui ne");
-
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 const auth = getAuth();
-createUserWithEmailAndPassword(auth, "holyone2802@gmail.com", "123456")
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    console.log("Created a new account successfully: " + user.displayName);
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
+
+function login(email, password) {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log("Đăng nhập thành công cho user " + user.email);
+      return true;
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      return false;
+    });
+  return false;
+}
+
+function register(email, password) {
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+      console.log("Created a new account successfully: " + user.displayName);
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+}
