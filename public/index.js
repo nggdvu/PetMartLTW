@@ -22,6 +22,8 @@ const analytics = getAnalytics(app);
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
+console.log("Chay rui ne");
+
 const auth = getAuth();
 createUserWithEmailAndPassword(auth, "holyone2802@gmail.com", "123456")
   .then((userCredential) => {
