@@ -1,171 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Firebase Hosting</title>
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-database-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-firestore-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-functions-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-messaging-compat.js"
-    ></script>
-    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-analytics-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-remote-config-compat.js"
-    ></script>
-    <script
-      defer
-      src="/__/firebase/9.19.1/firebase-performance-compat.js"
-    ></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script type="module" src="./index.js" />
-
-    <style media="screen">
-      body {
-        background: #eceff1;
-        color: rgba(0, 0, 0, 0.87);
-        font-family: Roboto, Helvetica, Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      #message {
-        background: white;
-        max-width: 360px;
-        margin: 100px auto 16px;
-        padding: 32px 24px;
-        border-radius: 3px;
-      }
-      #message h2 {
-        color: #ffa100;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0 0 8px;
-      }
-      #message h1 {
-        font-size: 22px;
-        font-weight: 300;
-        color: rgba(0, 0, 0, 0.6);
-        margin: 0 0 16px;
-      }
-      #message p {
-        line-height: 140%;
-        margin: 16px 0 24px;
-        font-size: 14px;
-      }
-      #message a {
-        display: block;
-        text-align: center;
-        background: #039be5;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
-        padding: 16px;
-        border-radius: 4px;
-      }
-      #message,
-      #message a {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      }
-      #load {
-        color: rgba(0, 0, 0, 0.4);
-        text-align: center;
-        font-size: 13px;
-      }
-      @media (max-width: 600px) {
-        body,
-        #message {
-          margin-top: 0;
-          background: white;
-          box-shadow: none;
-        }
-        body {
-          border-top: 16px solid #ffa100;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>
-        You're seeing this because you've successfully setup Firebase Hosting.
-        Now it's time to go build something extraordinary!
-      </p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/"
-        >Open Hosting Documentation</a
-      >
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loadEl = document.querySelector("#load");
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            "auth",
-            "database",
-            "firestore",
-            "functions",
-            "messaging",
-            "storage",
-            "analytics",
-            "remoteConfig",
-            "performance",
-          ].filter((feature) => typeof app[feature] === "function");
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(
-            ", "
-          )}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent =
-            "Error loading the Firebase SDK, check the console.";
-        }
-      });
-    </script>
-  </body>
-</html>
-=======
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -178,15 +11,14 @@
   <link rel="stylesheet" href="../assets/css/toast.css" />
   <link rel="stylesheet" href="../assets/css/autoslide.css" />
   <link rel="stylesheet" href="../assets/css/footer.css" />
-  <link rel="icon" 
+  <link rel="icon" type="image/x-icon" href="../assets/icon/favicon-32x32.png">
   <title>Pet Mart | Trang chủ</title>
 </head>
 <body>
   <div class="app">
     <!-- navBar -->
     <nav class="nav">
-      <img
-        onclick="window.location.href='index.html'" src="../assets/img/logo-01.png" alt="logo" class="logo" style="cursor: pointer"/>
+      <img onclick="window.location.href='./index.html'" src="../assets/img/logo-01.png" alt="logo" class="logo" style="cursor: pointer"/>
       <div class="nav__menu">
         <a id="navHome" href="./index.html">TRANG CHỦ</a>
         <a id="navShop" href="./shop.html">SIÊU THỊ THÚ CƯNG</a>
@@ -200,17 +32,18 @@
         <a href="./showtimes.html">DỊCH VỤ</a>
         <a href="./news.html">HỆ THỐNG CỬA HÀNG</a>
         <a href="./price.html">TẠP CHÍ</a>
-
-        <div class="nav__right">
-          <a id="navCart">Giỏ hàng</a>
-        </div>
       </div>
+        <div class="nav__right">
+          <img  src="../assets/icon/search.png" alt="search" class="search" style="cursor: pointer" width="24px"/>
+          <img  src="../assets/icon/user.png" alt="user" class="search" style="cursor: pointer" width="30px"/>
+          <img onclick="window.location.href='./shop.html'" src="../assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
+        </div>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
     </nav>
+    
 </body>
 </html>
->>>>>>> cd8b2fce3661d5d01ca62c7a426177baafa8385f
