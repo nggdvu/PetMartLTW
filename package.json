@@ -6,8 +6,11 @@
   "name": "petmart",
   "description": "A website for selling pet's groceries. Anh vũ nhờ.",
   "version": "1.0.0",
-  "main": "public/index.js",
-  "devDependencies": {},
+  "private": true,
+  "devDependencies": {
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
