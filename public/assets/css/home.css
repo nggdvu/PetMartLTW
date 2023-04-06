@@ -1,31 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-  }
-  
-  html,
-  button,
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  :root {
-    --primarycolor: #fafafa;
-    --primaryblack: #050505;
-  }
-  nav{
-    background-color: white;
-  }
-  body {
-    background-color: var(--primarycolor);
-    color: var(--primaryblack);
-    transition: 0.5s linear;
-  }
-  
-  button {
-    cursor: pointer;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
 
-  
+html,
+button,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primarycolor: #fafafa;
+  --primaryblack: #050505;
+}
+nav {
+  background-color: white;
+}
+body {
+  background-color: var(--primarycolor);
+  color: var(--primaryblack);
+  transition: 0.5s linear;
+}
+
+button {
+  cursor: pointer;
+}

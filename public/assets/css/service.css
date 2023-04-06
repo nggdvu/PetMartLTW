@@ -1,0 +1,42 @@
+.img_fit {
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+  position: static;
+  display: flex;
+}
+
+.cardField {
+  position: relative;
+  display: block;
+}
+
+#book_username {
+  position: absolute;
+  top: 160px;
+  left: 414px;
+  width: 286px;
+  height: 40px;
+  display: block;
+  z-index: 20;
+}
+
+#book_phone {
+  width: 286px;
+  height: 40px;
+  display: flex;
+}
+
+#book_date {
+  width: 286px;
+  height: 40px;
+  display: flex;
+}
+
+#book_time {
+  width: 286px;
+  height: 40px;
+  display: flex;
+}
