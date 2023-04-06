@@ -6,6 +6,7 @@
   width: 100%;
   position: static;
   display: flex;
+  flex-direction: column;
 }
 
 .cardField {
@@ -13,30 +14,68 @@
   display: block;
 }
 
-#book_username {
-  position: absolute;
-  top: 160px;
-  left: 414px;
-  width: 286px;
-  height: 40px;
-  display: block;
-  z-index: 20;
+.relDiv1 {
+  width: 100%;
+  display: flex;
+  direction: ltr;
+  padding-top: 10px;
 }
 
-#book_phone {
-  width: 286px;
-  height: 40px;
+.title {
+  direction: ltr;
   display: flex;
+  width: fit-content;
+  margin: auto;
 }
 
-#book_date {
-  width: 286px;
-  height: 40px;
-  display: flex;
+.meow_div {
+  padding-right: 48px;
 }
 
-#book_time {
-  width: 286px;
-  height: 40px;
-  display: flex;
+.description {
+  width: 802px;
+  padding-top: 10px;
+  padding-inline: 10px;
+}
+
+.book_title {
+  font-size: 3vw;
+  font-family: inherit;
+  color: #da2126;
+}
+
+.book_description {
+  padding-top: 22px;
+  font-size: 1.5vw;
+  font-family: inherit;
+  text-align: justify;
+  width: auto;
+}
+
+@media (max-width: 9px) {
+  .relDiv1 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .meow {
+    width: 100px;
+  }
+
+  .meow_div {
+    padding-right: 10px;
+    width: 50%;
+  }
+
+  .description {
+    width: auto;
+    flex-wrap: wrap;
+    word-wrap: normal;
+  }
 }

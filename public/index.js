@@ -55,3 +55,83 @@ function register(email, password) {
       // ..
     });
 }
+
+const admin = require("firebase-admin");
+
+// Initialize Firebase Admin SDK
+const serviceAccount = require("/path/to/serviceAccountKey.json");
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+// Get a Firestore instance
+const db = admin.firestore();
+
+// Function to add data to Firestore
+function addDataToFirestore(collectionName, documentName, data) {
+  const docRef = db.collection(collectionName).doc(documentName);
+  return docRef
+    .set(data)
+    .then(() => {
+      console.log("Data added to Firestore");
+    })
+    .catch((error) => {
+      console.error("Error adding data to Firestore: ", error);
+    });
+}
+
+// Function to read data from Firestore
+function readDataFromFirestore(collectionName) {
+  return db
+    .collection(collectionName)
+    .get()
+    .then((querySnapshot) => {
+      const data = [];
+      querySnapshot.forEach((doc) => {
+        data.push({ id: doc.id, ...doc.data() });
+      });
+      return data;
+    })
+    .catch((error) => {
+      console.error("Error reading data from Firestore: ", error);
+    });
+}
+
+// Function to get document data of a person with a given name
+function getPersonDataByName(collectionName, name) {
+  return db
+    .collection(collectionName)
+    .where("name", "==", name)
+    .get()
+    .then((querySnapshot) => {
+      const data = [];
+      querySnapshot.forEach((doc) => {
+        data.push({ id: doc.id, ...doc.data() });
+      });
+      return data;
+    })
+    .catch((error) => {
+      console.error("Error getting person data from Firestore: ", error);
+    });
+}
+
+// Example usage
+const data = {
+  name: "John Doe",
+  email: "johndoe@example.com",
+  age: 30,
+};
+addDataToFirestore("users", "user1", data)
+  .then(() => {
+    return readDataFromFirestore("users");
+  })
+  .then((data) => {
+    console.log("Data read from Firestore: ", data);
+    return getPersonDataByName("users", "John Doe");
+  })
+  .then((data) => {
+    console.log("Person data read from Firestore: ", data);
+  })
+  .catch((error) => {
+    console.error("Error: ", error);
+  });
