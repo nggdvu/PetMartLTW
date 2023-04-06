@@ -44,10 +44,17 @@ button {
   margin: auto;
 }
 
-.meow_div {
+.themepic {
   padding-right: 48px;
+  padding-top: 80px;
 }
 
+.store {
+  width: 480px;
+}
+.themelogo {
+  width: 45%;
+}
 .description {
   width: 802px;
   padding-top: 10px;
@@ -73,4 +80,59 @@ button {
   left: 270px;
   width: fit-content;
   height: 100%;
+.book_title {
+  font-size: 16pt;
+  font-family: inherit;
+  color: var(--primaryblack);
+}
+
+.book_description {
+  padding-top: 22px;
+  font-size: 14pt;
+  font-family: inherit;
+  line-height: 30px;
+  text-align: justify;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .relDiv1 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2vw;
+  }
+
+  .book_title {
+    padding-right: 20px;
+    font-size: 2vw;
+  }
+
+  .store {
+    display: none;
+  }
+
+  .themepic {
+    padding-right: 10px;
+    width: 50%;
+  }
+
+  .description {
+    width: auto;
+    flex-wrap: wrap;
+    word-wrap: normal;
+  }
+  .book_description {
+    padding-top: 22px;
+    font-size: 2vw;
+    font-family: inherit;
+    line-height: 30px;
+    text-align: justify;
+    width: auto;
+  }
 }
