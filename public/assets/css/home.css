@@ -16,7 +16,7 @@ body {
   --primarycolor: #fafafa;
   --primaryblack: #050505;
 }
-nav {
+.nav {
   background-color: white;
 }
 body {
@@ -27,4 +27,28 @@ body {
 
 button {
   cursor: pointer;
+}
+
+.relDiv1 {
+  width: 100%;
+  display: flex;
+  direction: ltr;
+  padding-top: 10px;
+}
+
+.title {
+  direction: ltr;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.meow_div {
+  padding-right: 48px;
+}
+
+.description {
+  width: 802px;
+  padding-top: 10px;
+  padding-inline: 10px;
 }
