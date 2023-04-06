@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  padding: 5px 0;
+  padding: 10px 20px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.758);
   box-sizing: border-box;
@@ -15,7 +15,7 @@ a:hover {
 .nav {
   display: flex;
   align-items: center;
-  position: static;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -79,7 +79,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   a {
     font-size: 14px;
   }
@@ -94,7 +94,7 @@ a:hover {
 
 @media (max-width: 900px) {
   .logo {
-    width: 40px;
+    width: 100px;
   }
 
   .hamburger {

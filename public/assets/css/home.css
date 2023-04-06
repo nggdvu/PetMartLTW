@@ -26,15 +26,17 @@ body {
   transition: 0.5s linear;
 }
 
-button {
+.button {
   cursor: pointer;
+  width: 550px;
+  display: flex;
 }
 
 .relDiv1 {
   width: 100%;
   display: flex;
   direction: ltr;
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 .title {
@@ -50,13 +52,13 @@ button {
 }
 
 .store {
-  width: 480px;
+  width: 450px;
 }
 .themelogo {
   width: 45%;
 }
 .description {
-  width: 802px;
+  width: 750px;
   padding-top: 10px;
   padding-inline: 10px;
 }
@@ -69,14 +71,24 @@ button {
 
 .book_description {
   padding-top: 22px;
-  font-size: 14pt;
+  font-size: 13pt;
   font-family: inherit;
   line-height: 30px;
   text-align: justify;
   width: auto;
 }
 
+.serv {
+  width: 100%;
+  display: flex;
+}
+
 @media (max-width: 900px) {
+  .button {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+  }
   .relDiv1 {
     display: flex;
     flex-direction: column;
@@ -91,7 +103,7 @@ button {
 
   .book_title {
     padding-right: 20px;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .store {
@@ -110,10 +122,11 @@ button {
   }
   .book_description {
     padding-top: 22px;
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: inherit;
     line-height: 30px;
     text-align: justify;
+
     width: auto;
   }
 }
