@@ -53,3 +53,24 @@ button {
   padding-top: 10px;
   padding-inline: 10px;
 }
+
+.form {
+  position: relative;
+}
+
+.form_content > input {
+  position: relative;
+  width: 85%;
+  height: 10%;
+  margin-bottom: calc(62px - 13%);
+  background-color: transparent;
+  border: none;
+}
+
+.form_content {
+  position: absolute;
+  top: calc(180px - 14.5%);
+  left: 270px;
+  width: fit-content;
+  height: 100%;
+}
