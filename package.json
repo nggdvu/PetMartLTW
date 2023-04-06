@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "firebase": "^9.19.1",
-    "firebase-tools": "^11.25.2"
+    "firebase-tools": "^11.25.3"
   },
   "name": "petmart",
   "description": "A website for selling pet's groceries. Anh vũ nhờ.",
