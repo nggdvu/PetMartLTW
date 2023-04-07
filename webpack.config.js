@@ -6,4 +6,11 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "public"),
   },
+  resolve: {
+    fallback: {
+      fs: false,
+      os: false,
+      path: false,
+    },
+  },
 };

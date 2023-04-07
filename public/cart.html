@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/autoslide.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/shop.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -21,6 +22,16 @@
   </head>
   <body>
     <div class="app" id="wrap">
+      <div class="login-layout" id="login-layout">
+        <div id="opaque-layout"></div>
+        <img class="login-layout-img" src="./assets/img/login-layout.png" />
+        <div class="login-form-div">
+          <input id="login-email" type="text" placeholder="Email" />
+          <input id="login-password" type="password" placeholder="Mật khẩu" />
+          <div id="login-button"></div>
+          <p id="login-status"></p>
+        </div>
+      </div>
       <!-- navBar -->
       <nav class="nav">
         <img
@@ -46,6 +57,7 @@
               width="24px"
             />
             <img
+              id="login"
               src="./assets/icon/user.png"
               alt="user"
               class="search"

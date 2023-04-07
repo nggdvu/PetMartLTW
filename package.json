@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "firebase": "^9.19.1",
-    "firebase-tools": "^11.25.3"
+    "firebase-tools": "^11.25.3",
+    "fs": "^0.0.1-security",
+    "path-browserify": "^1.0.1"
   },
   "name": "petmart",
   "description": "A website for selling pet's groceries. Anh vũ nhờ.",
@@ -25,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/P-ro-VL/PetMart/issues"
   },
-  "homepage": "https://github.com/P-ro-VL/PetMart#readme"
+  "homepage": "https://github.com/P-ro-VL/PetMart#readme",
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  }
 }
