@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./assets/css/autoslide.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/service.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
@@ -24,9 +26,20 @@
       href="./assets/icon/favicon-32x32.png"
     />
     <title>Pet Mart | Trang chủ</title>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div class="app" id="wrap">
+      <div class="login-layout" id="login-layout">
+        <div id="opaque-layout"></div>
+        <img class="login-layout-img" src="./assets/img/login-layout.png" />
+        <div class="login-form-div">
+          <input id="login-email" type="text" placeholder="Email" />
+          <input id="login-password" type="password" placeholder="Mật khẩu" />
+          <div id="login-button"></div>
+          <p id="login-status"></p>
+        </div>
+      </div>
       <!-- navBar -->
       <nav class="nav">
         <img
@@ -52,6 +65,7 @@
               width="24px"
             />
             <img
+              id="login"
               src="./assets/icon/user.png"
               alt="user"
               class="search"
@@ -84,6 +98,7 @@
               width="24px"
             />
             <img
+              id="login"
               src="./assets/icon/user.png"
               alt="user"
               class="search"
@@ -143,10 +158,25 @@
               class="form-layout"
               src="./assets/img/service/book_layout.png"
             />
+
             <div class="form_content">
               <input id="customer_name" type="text" />
               <input id="phone_number" type="text" inputmode="numeric" />
-              <input id="date" type="date" />
+              <input id="date" type="date" placeholder="Nhập ngày" />
+              <select id="services">
+                <option>Cắt tỉa lông cho thú cưng</option>
+                <option>Tắm cho thú cưng</option>
+                <option>Trông giữ thú cưng</option>
+                <option>Làm mượt lông cho thú cưng</option>
+                <option>Tiêm chủng cho thú cưng</option>
+              </select>
+            </div>
+
+            <div class="form_buttons">
+              <div class="form_buttons_div">
+                <div id="viewBookingHistoryBtn"></div>
+                <div id="confirmBookingBtn" onclick=""></div>
+              </div>
             </div>
           </div>
         </div>

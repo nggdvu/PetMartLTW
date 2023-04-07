@@ -79,3 +79,76 @@
     word-wrap: normal;
   }
 }
+
+.form {
+  position: relative;
+}
+
+.form_content > input {
+  position: relative;
+  width: 85%;
+  height: 10%;
+  margin-bottom: calc(62px - 13%);
+  background-color: transparent;
+  border: none;
+}
+
+.form_content > select {
+  position: relative;
+  width: 85%;
+  height: 10%;
+  margin-bottom: calc(62px - 13%);
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+.form_content {
+  position: absolute;
+  top: calc(180px - 14.5%);
+  left: 270px;
+  width: fit-content;
+  height: 100%;
+}
+
+#date {
+  padding-top: 5px;
+  text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form_buttons {
+  position: absolute;
+  top: 78%;
+  width: 100%;
+  height: 10%;
+  left: 0;
+}
+
+.form_buttons_div > div {
+  position: relative;
+  width: 242px;
+  height: 100%;
+  margin: auto;
+}
+
+.form_buttons_div > div:hover {
+  cursor: pointer;
+}
+
+.form_buttons_div {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  align-content: space-evenly;
+}

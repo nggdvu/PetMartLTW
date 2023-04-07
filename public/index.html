@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/css/toast.css" />
   <link rel="stylesheet" href="./assets/css/autoslide.css" />
   <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
   <link rel="stylesheet" href="./assets/css/cart.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +21,17 @@
 </head>
 <body>
   <div class="app">
+    <div class="login-layout" id="login-layout">
+      <div id="opaque-layout"></div>
+      <img class="login-layout-img" src="./assets/img/login-layout.png"/>
+      <div class="login-form-div">
+        <input id="login-email" type="text" placeholder="Email"/>
+        <input id="login-password" type="password" placeholder="Mật khẩu"/>
+        <div id="login-button"></div>
+        <p id="login-status"></p>
+      </div>
+    </div>
+
     <!-- navBar -->
     <nav class="nav">
       <img
@@ -33,7 +45,7 @@
 
         <div class="nav__right">
           <img  src="./assets/icon/search.png" alt="search" class="search" style="cursor: pointer" width="24px"/>
-          <img  src="./assets/icon/user.png" alt="user" class="search" style="cursor: pointer" width="30px"/>
+          <img id="login" src="./assets/icon/user.png" alt="user" class="search" style="cursor: pointer" width="30px"/>
           <img onclick="window.location.href='./cart.html'" src="./assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
         </div>
       </div>

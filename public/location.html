@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/autoslide.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/cart.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -21,6 +22,16 @@
   </head>
   <body>
     <div class="app" id="wrap">
+      <div class="login-layout" id="login-layout">
+      <div id="opaque-layout"></div>
+      <img class="login-layout-img" src="./assets/img/login-layout.png"/>
+      <div class="login-form-div">
+        <input id="login-email" type="text" placeholder="Email"/>
+        <input id="login-password" type="password" placeholder="Mật khẩu"/>
+        <div id="login-button"></div>
+        <p id="login-status"></p>
+      </div>
+    </div>
       <!-- navBar -->
       <nav class="nav">
         <img
@@ -35,7 +46,7 @@
           <div class="nav__right">
             <img  src="./assets/icon/search.png" alt="search" class="search" style="cursor: pointer" width="24px"/>
             <img  src="./assets/icon/user.png" alt="user" class="search" style="cursor: pointer" width="30px"/>
-            <img onclick="window.location.href='./cart.html'" src="./assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
+            <img onclick="window.location.href='./shop.html'" src="./assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
           </div>
         </div>
         <div class="nav__mobie">
@@ -48,7 +59,7 @@
           <div class="nav__right">
             <img  src="./assets/icon/search.png" alt="search" class="search" style="cursor: pointer" width="24px"/>
             <img  src="./assets/icon/user.png" alt="user" class="search" style="cursor: pointer" width="30px"/>
-            <img onclick="window.location.href='./cart.html'" src="./assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
+            <img onclick="window.location.href='./shop.html'" src="./assets/icon/cartbutton.png" alt="cart" class="cart" style="cursor: pointer" width="125px" />
           </div>
         </div>
         <div class="hamburger">
@@ -60,11 +71,13 @@
       <div class="locationbody">
       <img class="img_fit" src="./assets/img/shop/shop_title.png"></img>
 
-      <span class="shop_div">
+      <span class="shop_div" class="img_fit">
         <img class="shops" src="./assets/img/shop/shops.png"></image>
       </span>
 
-      <img class="img_fit" src="./assets/img/shop/shop_content.png"></img>
+      <a class="img_fit" target="_blank" href="https://www.google.com/maps/place/18+P.+Ch%E1%BA%A3+C%C3%A1,+H%C3%A0ng+B%E1%BB%93,+Ho%C3%A0n+Ki%E1%BA%BFm,+H%C3%A0+N%E1%BB%99i/@21.0354281,105.849247,17z/data=!3m1!4b1!4m6!3m5!1s0x3135abbedeafc515:0x25546a1666207a0e!8m2!3d21.0354281!4d105.849247!16s%2Fg%2F11s9ljym5k">
+        <img class="img_fit" src="./assets/img/shop/shop_content.png"/>
+      </a>
 
       <img class="footer" src="./assets/img/Footer.png"></img>
       </div>
