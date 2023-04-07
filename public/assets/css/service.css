@@ -29,9 +29,12 @@
 }
 
 .meow_div {
-  padding-right: 48px;
+  margin: auto;
 }
 
+.meow {
+  width: 75%;
+}
 .description {
   width: 802px;
   padding-top: 10px;
@@ -42,14 +45,16 @@
   font-size: 3vw;
   font-family: inherit;
   color: #da2126;
+  padding-top: 70px;
 }
 
 .book_description {
   padding-top: 22px;
-  font-size: 1.5vw;
+  font-size: 13pt;
   font-family: inherit;
   text-align: justify;
-  width: auto;
+  width: 775px;
+  padding-bottom: 25px;
 }
 
 @media (max-width: 900px) {
