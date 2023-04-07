@@ -82,6 +82,7 @@ body {
   left: 270px;
   width: fit-content;
   height: 100%;
+}
 .book_title {
   font-size: 16pt;
   font-family: inherit;
@@ -100,6 +101,8 @@ body {
 .serv {
   width: 100%;
   display: flex;
+  z-index: 1;
+  position: relative;
 }
 
 @media (max-width: 900px) {

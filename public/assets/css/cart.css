@@ -3,6 +3,9 @@
   position: static;
   display: flex;
 }
+.locationbody {
+  padding-top: 50px;
+}
 
 #wrap {
   position: relative;
@@ -19,6 +22,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
+  position: relative;
 }
 
 .shop_div::-webkit-scrollbar {
@@ -28,4 +32,6 @@
 .shops {
   display: inline;
   height: 100%;
+  z-index: 2;
+  position: relative;
 }
