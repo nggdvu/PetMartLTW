@@ -1,2 +1,4 @@
 # PetMart
-A website for selling pet's groceries. Anh vũ nhờ.
+A website for selling pet's groceries. This is the assignment for "Web Designing" subject of IT63A NEU
+
+🌐 Deployed web URL: https://petmart-8be2a.web.app
