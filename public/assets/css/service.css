@@ -70,9 +70,11 @@
   }
 
   .meow {
-    width: 100px;
+    display: none;
   }
-
+  .camket {
+    display: none;
+  }
   .meow_div {
     padding-right: 10px;
     width: 50%;
